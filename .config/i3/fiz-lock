@@ -1,0 +1,26 @@
+#!/bin/sh -e
+
+# Take a screenshot
+scrot /tmp/screen_locked.png
+
+# Pixellate it 10x
+mogrify -colorspace gray \
+        -scale 10% -scale 1000% \
+        -draw "text 100,100 'Screen locked' " \
+        /tmp/screen_locked.png
+
+# Add text
+# convert /tmp/screen_locked.png \
+#         -fill white \
+#         -font FreeMono \
+#         -size 250x120 \
+#         -pointsize 24 \
+#         -gravity center \
+#         label:Screen \
+#         /tmp/test.jpg
+
+# Lock screen displaying this image.
+i3lock -i /tmp/screen_locked.png
+
+# Turn the screen off after a delay.
+sleep 60; pgrep i3lock && xset dpms force off
