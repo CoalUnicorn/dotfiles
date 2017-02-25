@@ -1,1 +1,6 @@
+! cd .config
+shell cd .config
+
+set_option 
+q
 delete

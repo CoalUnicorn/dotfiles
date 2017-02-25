@@ -83,5 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias livestream="livestreamer --player mpv"
+alias strm="streamlink --player mpv"
 alias conf="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
