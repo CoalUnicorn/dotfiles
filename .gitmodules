@@ -18,3 +18,7 @@
   path = .vim/bundle/vim-markdownfmt
   url = https://github.com/moorereason/vim-markdownfmt.git
 
+[submodule "bundle/vim-racket"]
+  path = .vim/bundle/vim-racket
+  url = https://github.com/wlangstroth/vim-racket.git
+
