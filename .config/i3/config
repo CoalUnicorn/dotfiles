@@ -24,29 +24,44 @@ focus_follows_mouse no
 
 # Workspaces
 
-set $WS1 1:[ Web ]
-set $WS2 2:[ >_ ]
-set $WS3 3:[ Twitch ]
-set $WS4 4:[ 一λ ]
-set $WS5 5:[ 二λ ]
-set $WS6 6:[ 三 λ ]
-set $WS7 7:[ 四 λ ]
-set $WS8 8:[ 五 λ ]
-set $WS9 9:[ 六 λ ]
+set $WS1  1:[ Web ]
+set $WS2  2:[ >_ ]
+set $WS3  3:[ Twitch ]
+set $WS4  4:[ 一λ ]
+set $WS5  5:[ 二λ ]
+set $WS6  6:[ 三 λ ]
+set $WS7  7:[ 四 λ ]
+set $WS8  8:[ 五 λ ]
+set $WS9  9:[ Code ]
 set $WS10 10:[ 七 λ ]
 
 # Automatic window assign
-assign [window_role="^browser$"] $WS1
-assign [class="^mpv$"] $WS3
-# assign [class="Chromium"] $WS1
- 
+assign [window_role="^browser$"]  $WS1
+assign [title="- - mpv"]          $WS3
+assign [class="^mpv$"]            $WS10
+assign [class="^code$"]           $ws9
+
+# Windows modes
+for_window [window_role="pop-up"] floating enable, border normal
+for_window [window_type="dialog"] floating enable, border normal
+for_window [window_type="utility"] floating enable, border normal
+for_window [class="^Caja$"] floating enable, border normal
+# for_window [class="^$"]
+# for_window [class="^$"]
+
+# Scratchpad setup
+
+bindsym $mod+Shift+z move scratchpad
+
+bindsym $mod+z scratchpad show
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -107,7 +122,7 @@ bindsym $mod+f fullscreen toggle
 
 # Going Back and Forth
 workspace_auto_back_and_forth yes
-bindsym $mod+z workspace back_and_forth
+# bindsym $mod+z workspace back_and_forth
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -124,7 +139,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -184,6 +199,20 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Moving floating window with arrows
+
+mode "move" {
+  bindsym Up move up 20px
+  bindsym Left move left 20px
+  bindsym Down move down 20px
+  bindsym Right move right 20px
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+
+  # bindsym $mod+m move mode "default"
+}
+bindsym $mod+m mode "move" focus floating
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -225,4 +254,5 @@ bindsym XF86MonBrightnessDown exec sudo light -U 5 # decrease screen brightness
 
 # Startup
 exec --no-startup-id nm-applet
+exec --no-startup-id google-chrome
 

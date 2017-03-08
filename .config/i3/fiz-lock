@@ -4,7 +4,7 @@
 scrot /tmp/screen_locked.png
 
 # Pixellate it 10x
-mogrify -colorspace gray \
+mogrify # -colorspace gray \
         -scale 10% -scale 1000% \
         -draw "text 100,100 'Screen locked' " \
         /tmp/screen_locked.png

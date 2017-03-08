@@ -1,5 +1,10 @@
 #! /bin/bash
-set -e
 
-conf submodule update --init --recursive
-conf submodule foreach git pull --recurse-submodules origin master
+###############################################################################
+#               Script to manage Pathogen plugins for Vim                     #
+###############################################################################
+set -e
+# !!! Change to use relative paths
+CONF='/usr/bin/git --git-dir=/home/michal/.cfg/ --work-tree=/home/michal'
+$CONF submodule update --init --recursive
+$CONF submodule foreach git pull --recurse-submodules origin master

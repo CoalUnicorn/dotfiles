@@ -8,16 +8,26 @@ filetype plugin indent on
 
 " Settings
 set nocompatible
+
+" Provides tab-completition for all file-related tasks
+set path+=**
+
 let mapleader = "\<Space>"
 set encoding=utf-8
 " set spell
 " set spelllang=en_gb
+
+" Do we need speed
 set ttyfast
 set backspace=indent,eol,start
 set noswapfile
 set nobackup
-set autowrite " Automatically save before :next, :make etc.
-set autoread " Automatically reread changed files without asking me anything
+
+" Automatically save before :next, :make etc.
+set autowrite
+
+" Automatically reread changed files without asking me anything
+set autoread
 
 " speed up syntax highlighting
 set nocursorcolumn
@@ -28,17 +38,31 @@ set synmaxcol=300
 set re=1
 
 " Visual
-set showcmd         " Show (partial) command in the last line of the screen.
-set wildmenu                " Command completion
-set wildmode=list:longest   " List all matches and complete till longest common string
-set laststatus=2            " The last window will have a status line always
-set ruler                   " Show the line and column number of the cursor position, separated by a comma.
-set lazyredraw              " Don't update the screen while executing macros/commands
+
+" Show (partial) command in the last line of the screen.
+set showcmd
+
+" Command completion
+set wildmenu
+
+" List all matches and complete till longest common string
+set wildmode=list:longest
+
+" The last window will have a status line always
+set laststatus=2
+
+set splitright
+
+" Show the line and column number of the cursor position, separated by a comma.
+set ruler
+
+" Don't update the screen while executing macros/commands
+set lazyredraw
 
 " Buffer Visuals
+syntax on
 set novisualbell
 set cursorline
-syntax on
 set number 
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
@@ -47,6 +71,9 @@ set wrap
 set textwidth=79
 set linebreak
 set numberwidth=4
+
+" Display relative lines
+set relativenumber
 
 " Search
 set incsearch
@@ -94,3 +121,18 @@ let g:rainbow_conf = {
     \        'css': 0,
     \    }
     \}
+
+
+"_______________________________________________________________________________
+" Syntastic
+"_______________________________________________________________________________
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
