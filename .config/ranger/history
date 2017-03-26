@@ -5,7 +5,6 @@ q
 !cd /media/michal
 cd /media/michal
 cd /home/michal/_dev/
-
 open_with isoinfo
 wq
 w
@@ -17,3 +16,7 @@ Q
 ?
 help 
 delete
+help
+
+m
+M

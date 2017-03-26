@@ -1,10 +1,12 @@
 """ Initial Vim configuration plus plug-in
 
 " Pathogen
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 
 filetype plugin indent on
 
+syntax on
 
 " Settings
 set nocompatible
@@ -60,7 +62,6 @@ set ruler
 set lazyredraw
 
 " Buffer Visuals
-syntax on
 set novisualbell
 set cursorline
 set number 
@@ -71,6 +72,8 @@ set wrap
 set textwidth=79
 set linebreak
 set numberwidth=4
+" Ohh the white space
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Display relative lines
 set relativenumber
@@ -136,3 +139,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"_______________________________________________________________________________
+" Python mode
+"_______________________________________________________________________________
+let g:pymode_python = 'python3'

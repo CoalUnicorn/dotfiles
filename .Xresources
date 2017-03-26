@@ -135,10 +135,10 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 !! get option over to work
-# URxvt.keysym.M-Left:        \033[1;5D
-# URxvt.keysym.M-Right:       \033[1;5C
-# URxvt.keysym.C-Left:  \033[1;5D
-# URxvt.keysym.C-Right: \033[1;5C
+URxvt.keysym.M-Left:        \033[1;5D
+URxvt.keysym.M-Right:       \033[1;5C
+URxvt.keysym.C-Left:  \033[1;5D
+URxvt.keysym.C-Right: \033[1;5C
 
 ! keyboard-select
 URxvt.keysym.M-s: perl:keyboard-select:activate
@@ -148,12 +148,8 @@ URxvt.keysym.M-r: perl:keyboard-select:search
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.keysym.C-equal: perl:font-size:increase
 ! ! The default font increase step size is 1. This is for portability across
-! all
-! ! fonts (some fonts do not support particular font sizes). Because changing
-! font
-! ! size only really makes sense for anti-aliased fonts (Terminus is
-! bitmapped),
-! ! and because anti-aliased fonts support any size, it makes sense to just use
-! a
-! ! size step of 4 for faster transitions between font size changes.
-URxvt.font-size.step: 2
+! all fonts (some fonts do not support particular font sizes). Because changing
+! font size only really makes sense for anti-aliased fonts (Terminus is bitmapped),
+! and because anti-aliased fonts support any size, it makes sense to just use a
+! size step of 4 for faster transitions between font size changes.
+URxvt.font-size.step: 1
