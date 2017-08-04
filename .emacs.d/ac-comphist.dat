@@ -1,0 +1,86 @@
+((("elpy-use-ipython" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":background" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("set-face-attribute" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("linum" .
+   [0 0 0 0 2])
+  ("nil" .
+   [2 0 2])
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1])
+  ("org-log-done" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("org-log-" .
+   [0 0 0 0 0 0 0 1])
+  ("setq" .
+   [1 0 0 0])
+  ("org-capture" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("org-agenda" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("global-set-key" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("org-startup-indented" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("overview" .
+   [0 0 0 1 0 0 0 0])
+  ("quote" .
+   [0 0 0 0 1])
+  ("org-startup-folded" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("org-hide-leading-stars" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("org-directory" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("concat" .
+   [0 0 0 0 0 1])
+  ("org-default-notes-file" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("org-default" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("custom-set-variables" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("org-bullets-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("lambda" .
+   [1 0 0 0 0 0])
+  ("org-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("add-hook" .
+   [0 0 0 0 0 0 0 1])
+  ("org-bullets" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("setenv" .
+   [0 0 0 0 0 1])
+  ("global-linum-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("progn" .
+   [0 0 0 0 1])
+  (":config" .
+   [0 0 0 0 0 1 1])
+  (":ensure" .
+   [1 0 0 0 1 0 1])
+  ("use-package" .
+   [0 0 0 0 0 0 0 0 0 0 2])
+  ("org-insert-link" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("org-insert-link-global" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":init" .
+   [0 0 0 0 1])
+  ("elpy" .
+   [0 0 0 3])
+  ("dabools" .
+   [0 0 0 0 0 0 1])
+  ("for" .
+   [0 0 1])
+  ("buffer-name" .
+   [0 0 0 0 0 0 0 0 0 0 2])
+  ("current-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("mapcar" .
+   [1 0 0 0 0 0])
+  ("buffer" .
+   [0 0 0 0 0 1])))

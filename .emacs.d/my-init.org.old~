@@ -1,0 +1,119 @@
+* Interface
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-startup-message t)
+(tool-bar-mode -1)
+(fset 'yes-or-no-p 'y-or-n-p)
+#+END_SRC
+* Plugins
+** try
+#+BEGIN_SRC emacs-lisp
+(use-package try
+  :ensure t)
+#+END_SRC
+** which-key
+#+BEGIN_SRC emacs-lisp
+  (use-package which-key
+    :ensure t
+    :init
+    (progn
+      (which-key-mode))
+#+END_SRC
+** org
+#+BEGIN_SRC emacs-lisp
+ (require 'org)
+  (use-package org-bullets
+    :ensure t
+    :config
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+  (custom-set-variables
+   '(org-hide-leading-stars t)
+   '(org-startup-folded (quote overview))
+   '(org-startup-indented t)
+   )
+  (setq org-default-notes-file (concat org-directory "~/_org/notes.org"))
+  (define-key global-map "\C-cl" 'org-store-link)
+  (define-key global-map "\C-ca" 'org-agenda)
+  (define-key global-map "\C-cc" 'org-capture)
+  (setq org-log-done t)
+#+END_SRC
+** ace-window
+#+BEGIN_SRC emacs-lisp
+(use-package ace-window
+  :ensure t
+  :init
+  (progn
+    (global-set-key [remap other-window] 'ace-window)
+    (custom-set-faces
+     '(aw-leading-char-face
+       ((t (:inherit ace-jump-face-foreground :height 3.0)))))
+    ))
+#+END_SRC
+** counsel
+#+BEGIN_SRC emacs-lisp
+(use-package counsel
+  :ensure t
+  )
+#+END_SRC
+** swiper
+#+BEGIN_SRC emacs-lisp
+(use-package swiper
+  :ensure try
+  :bind (("C-s" . swiper)
+	 ("C-r" . swiper)
+	 ("C-c C-r" . ivy-resume)
+	 ("M-x" . counsel-M-x)
+	 ("C-x C-f" . counsel-find-file))
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (setq ivy-display-style 'fancy)
+    (define-key read-expression-map (kbd "C-r") 'counsel-expresion-history)
+    ))
+#+END_SRC
+** avy
+#+BEGIN_SRC emacs-lisp
+(use-package avy
+  :ensure t
+  :bind ("M-s" . avy-goto-char))
+#+END_SRC
+** auto-complete
+#+BEGIN_SRC emacs-lisp
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
+#+END_SRC
+** Flycheck
+#+BEGIN_SRC emacs-lisp
+ (use-package flycheck
+   :ensure t
+   :init
+ (global-flycheck-mode t))
+#+END_SRC
+** zenburn-theme
+#+BEGIN_SRC emacs-lisp
+(use-package zenburn-theme
+  :ensure t
+  :config (load-theme 'zenburn t))
+#+END_SRC
+** dracula-theme
+#+BEGIN_SRC emacs-lisp
+;;  (use-package dracula-theme
+;;    :ensure t
+;;    :config (load-theme 'dracula t))
+#+END_SRC
+** linium
+#+BEGIN_SRC emacs-lisp
+  (use-package linum
+    :ensure t
+    :config
+    (progn
+      (global-linum-mode 1)
+      (setq linum-format "%4d \u2502 ")))
+#+END_SRC
+

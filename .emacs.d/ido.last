@@ -1,0 +1,30 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/michal/" . "_org/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/michal/_org/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "dtd.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/michal/_org/" (22910 459 584148 765000) "learning/" "notes.org~" "dtd.org" "dtd.org~" "notes.org" ".git/" "../" "./" "org-capture/" "orgcard.pdf")
+
+ ("/home/" (22694 32543 497528 770000) "michal/" "lost+found/" "../" "./" ".ecryptfs/")
+
+ ("/home/michal/" (22910 8234 877012 669000) ".dnote-yaml-archived" ".Rhistory" ".audacity-data/" ".sqlite_history" ".tmux.conf" ".macromedia/" ".viminfo.tmp" ".node_repl_history" ".fonts/" "sketchbook/" ".npm-global/" ".subversion/" "dula-monitor.sh" ".yarnrc" ".steampid" "_git/" ".vue-templates/" ".dnote" ".steam/" "Arduino/" ".python_history" "_vod/" "tla+/" "rand" "@turris_1/" ".rnd" ".node-gyp/" "battery.sh" ".Xmodmap" ".zcompdump-michal-ThinkPad-X230-5.2" ".pki/" "monitors-setup.md" ".PyCharmEdu3.5/" ".dnote-upgrade" "Documents/" ".streamlinkrc" ".tor-browser-en/" ".ipython/" "_to-do/" ".zsh_history" "instaled-apps-ubuntu.txt" ".bash_logout" ".java/" ".ZeroBraneStudio" ".selected_editor" ".ropeproject/" "security-tools/" "watching/" ".zcompdump-michal-ThinkPad-X230-5.1.1" ".electron/" ".arduino15/" "racket/" ".Xresources" ".bashrc-anaconda3.bak" "VMs/" ".bashrc~" ".wget-hsts" ".gnome/" ".bash_history" ".pylint.d/" ".db-data/" ".v8flags.5.1.281.98.michal.json" ".log/" "test-configs/" "Calibre Library/" "upower" ".xsession-errors" ".racket/" ".jrnl_config" ".v8flags.5.8.283.41.06b2af75179fb94be097af182a442a4a.json" ".gksu.lock" ".dbus/" ".nano/" ".viminfx.tmp" ".Xdefaults" ".ssh/" ".xinputrc" "dotnet-install.sh" ".gdb_history" ".Xresources~" ".gtk-bookmarks" ".CubicSDR/" ".emacs-old" ".ethereum/" ".PyCharmCE2017.1/" ".gitconfig" ".gphoto/" ".weechat/" ".emacs.d/" ".CubicSDR-0.2.0-x86_64/" ".babel.json" ".lesshst" ".npmrc" ".viminfz.tmp" "Downloads/" ".ecryptfs/" ".teensy" "_apps/" ".local/" ".npm/" ".gdbinit-gef.py" ".android/" "rpi-server/" ".arduino/" ".pulse-cookie" "_org/" ".gdbinit" ".ethash/" ".gemrc" ".vim/" ".zsh-update" "_dev/" ".gitmodules" ".sage/" "R/" ".steampath" ".gnome2/" ".viminfo" ".ICEauthority" ".twitch.py" ".profile" ".gem/" ".openshot/" ".electron-gyp/" ".angular-cli.json" ".Bookmarks.SQLToolsStorage.json" ".vscode/" "bin/" "update-conf-submodules.sh" ".gconf/" ".sudo_as_admin_successful" ".zcompdump" ".dnoterc" ".pam_environment" ".bashrc" ".kivy/" ".functions" ".designer/" ".dmrc" ".urxvt/" ".viminfy.tmp" ".bundle/" ".cache/" ".gtkpod/" ".oracle_jre_usage/" ".rstudio-desktop/" ".vimrc" ".idlerc/" ".Private/" ".Xauthority" ".zshrc" ".oh-my-zsh/" ".ghc/" "journal.txt" ".zshrc~" ".w3m/" ".fehbg" ".gnupg/" ".adobe/" ".mozilla/" ".cfg/" "new-setup.sh" ".config/" "fun_shell/" ".stack/" ".xsession-errors.old" "music/" ".emacs~" ".v8flags.5.1.281.93.michal.json" ".resin/" ".synergy/" "_" "snap/" "Vim notetaking tips-wh_WGWii7UE.mkv" "../" "./")
+
+ ("/home/michal/.emacs.d/" (22910 9659 53881 94000) "init.el" "network-security.data" "powerline.el" "powerline-themes.el" "powerline-separators.el" "powerline/" "elpa/" "init.el~" "../" "./" "auto-save-list/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
